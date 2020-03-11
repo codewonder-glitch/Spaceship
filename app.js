@@ -80,7 +80,6 @@ class Alien_Ship{
    }
     hull_calc(){
         this.hull=this.hull-this.firepower;
-        console.log(this.hull);
         return this.hull;
     }
 }
@@ -93,7 +92,6 @@ const Alien6= new Alien_Ship();
 let Aliens=[Alien1,Alien2,Alien3,Alien4,Alien5,Alien6];
 var currentAlien=0;
 const us_Ship=new US_Ship(20,5,0.7);
-console.log(us_Ship.hull);
  alert("War is starting....");
 us_Ship.attack();
 
